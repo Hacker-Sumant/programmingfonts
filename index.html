@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+
+    <div class="text-box">
+        <div class="toparea">
+            <h2>Fonts Link</h2>
+            <div class="copybtn"><i class="fas fa-copy"></i></div>
+        </div>
+        <textarea class="text" readonly spellcheck="false">           
+                    @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+                    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+                    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+                    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+                    @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+                    @import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+                    @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+                    @import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+                    @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+                    @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+                    @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+                    @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+        </textarea>
+    </div>
+    <div class="bxfnt">
+        <h1>Fonts</h1>
+        <div class="main">
+        <div class="fnt">
+            <textarea id="display1" readonly spellcheck="false">font-family: 'Bahnschrift', sans-serif; </textarea>
+            <div class="copybtn1"><i class="fas fa-copy"></i>
+        </div>
+        <div class="fnt">
+            <textarea id="display2" readonly spellcheck="false">font-family: 'Lato', sans-serif; </textarea>
+            <div class="copybtn2"><i class="fas fa-copy"></i>
+        </div>
+        <div class="fnt">
+            <textarea id="display3" readonly spellcheck="false">font-family: 'Montserrat', sans-serif; </textarea>
+            <div class="copybtn3"><i class="fas fa-copy"></i>
+        </div>
+        <div class="fnt">
+            <textarea id="display4" readonly spellcheck="false">font-family: 'Mulish', sans-serif; </textarea>
+            <div class="copybtn4"><i class="fas fa-copy"></i>
+        </div>
+        <div class="fnt">
+            <textarea id="display5" readonly spellcheck="false">font-family: 'Nunito', sans-serif; </textarea>
+            <div class="copybtn5"><i class="fas fa-copy"></i>
+        </div>
+        <div class="fnt">
+            <textarea id="display6" readonly spellcheck="false">font-family: 'Poppins', sans-serif; </textarea>
+            <div class="copybtn6"><i class="fas fa-copy"></i>
+        </div>
+        <div class="fnt">
+            <textarea id="display7" readonly spellcheck="false">font-family: 'Roboto', sans-serif; </textarea>
+            <div class="copybtn7"><i class="fas fa-copy"></i>
+        </div>
+        <div class="fnt">
+            <textarea id="display8" readonly spellcheck="false">font-family: 'Ubuntu', sans-serif; </textarea>
+            <div class="copybtn8"><i class="fas fa-copy"></i>
+        </div>
+        <div class="fnt">
+            <textarea id="display9" readonly spellcheck="false">font-family: 'Rancho', sans-serif;  </textarea>
+            <div class="copybtn9"><i class="fas fa-copy"></i>
+        </div>
+        <div class="fnt">
+            <textarea id="display10" readonly spellcheck="false">font-family: 'Rubik', sans-serif; </textarea>
+            <div class="copybtn10"><i class="fas fa-copy"></i>
+        </div>
+        <div class="fnt">
+            <textarea id="display11" readonly spellcheck="false">font-family: 'Quicksand', sans-serif;  </textarea>
+            <div class="copybtn11"><i class="fas fa-copy"></i>
+        </div>
+        <div class="fnt">
+            <textarea id="display12" readonly spellcheck="false">font-family: 'Josefin Sans', sans-serif;</textarea>
+            <div class="copybtn12"><i class="fas fa-copy"></i>
+        </div>
+        <div class="fnt">
+            <textarea id="display13" readonly spellcheck="false">font-family: 'Sriracha', cursive;</textarea>
+            <div class="copybtn13"><i class="fas fa-copy"></i>
+        </div>
+    </div>
+    </div>
+    <script>
+        const copyBtn = document.querySelector(".copybtn");
+        const textarea = document.querySelector(".text");
+        copyBtn.addEventListener("click",()=>{
+            textarea.select();
+            document.execCommand("copy");
+            copyBtn.innerHTML = `<i class="fas fa-check"></i>`;
+            copyBtn.style.background="#2dcda7";
+            copyBtn.style.color="#fff";
+            setTimeout(()=>{
+                copyBtn.innerHTML = `<i class="fas fa-copy"></i>`;
+                copyBtn.style.background="";
+                copyBtn.style.color="";
+                document.getSelection().removeAllRanges();
+            },1000);
+        });
+        const copyBtn1 = document.querySelector(".copybtn1");
+        const display1  = document.querySelector("#display1");
+        copyBtn1.addEventListener("click",()=>{
+            display1.select();
+            document.execCommand("copy");
+            copyBtn1.innerHTML = `<i class="fas fa-check"></i>`;
+            copyBtn1.style.background="#2dcda7";
+            copyBtn1.style.color="#fff";
+            setTimeout(()=>{
+                copyBtn1.innerHTML = `<i class="fas fa-copy"></i>`;
+                copyBtn1.style.background="";
+                copyBtn1.style.color="";
+                document.getSelection().removeAllRanges();
+            },1000);
+        });
+        const copyBtn2 = document.querySelector(".copybtn2");
+        const display2  = document.querySelector("#display2");
+        copyBtn2.addEventListener("click",()=>{
+            display2.select();
+            document.execCommand("copy");
+            copyBtn2.innerHTML = `<i class="fas fa-check"></i>`;
+            copyBtn2.style.background="#2dcda7";
+            copyBtn2.style.color="#fff";
+            setTimeout(()=>{
+                copyBtn2.innerHTML = `<i class="fas fa-copy"></i>`;
+                copyBtn2.style.background="";
+                copyBtn2.style.color="";
+                document.getSelection().removeAllRanges();
+            },1000);
+        });
+        const copyBtn3 = document.querySelector(".copybtn3");
+        const display3  = document.querySelector("#display3");
+        copyBtn3.addEventListener("click",()=>{
+            display3.select();
+            document.execCommand("copy");
+            copyBtn3.innerHTML = `<i class="fas fa-check"></i>`;
+            copyBtn3.style.background="#2dcda7";
+            copyBtn3.style.color="#fff";
+            setTimeout(()=>{
+                copyBtn3.innerHTML = `<i class="fas fa-copy"></i>`;
+                copyBtn3.style.background="";
+                copyBtn3.style.color="";
+                document.getSelection().removeAllRanges();
+            },1000);
+        });
+        const copyBtn4 = document.querySelector(".copybtn4");
+        const display4  = document.querySelector("#display4");
+        copyBtn4.addEventListener("click",()=>{
+            display4.select();
+            document.execCommand("copy");
+            copyBtn4.innerHTML = `<i class="fas fa-check"></i>`;
+            copyBtn4.style.background="#2dcda7";
+            copyBtn4.style.color="#fff";
+            setTimeout(()=>{
+                copyBtn4.innerHTML = `<i class="fas fa-copy"></i>`;
+                copyBtn4.style.background="";
+                copyBtn4.style.color="";
+                document.getSelection().removeAllRanges();
+            },1000);
+        });
+        const copyBtn5 = document.querySelector(".copybtn5");
+        const display5  = document.querySelector("#display5");
+        copyBtn5.addEventListener("click",()=>{
+            display5.select();
+            document.execCommand("copy");
+            copyBtn5.innerHTML = `<i class="fas fa-check"></i>`;
+            copyBtn5.style.background="#2dcda7";
+            copyBtn5.style.color="#fff";
+            setTimeout(()=>{
+                copyBtn5.innerHTML = `<i class="fas fa-copy"></i>`;
+                copyBtn5.style.background="";
+                copyBtn5.style.color="";
+                document.getSelection().removeAllRanges();
+            },1000);
+        });
+        const copyBtn6 = document.querySelector(".copybtn6");
+        const display6  = document.querySelector("#display6");
+        copyBtn6.addEventListener("click",()=>{
+            display6.select();
+            document.execCommand("copy");
+            copyBtn6.innerHTML = `<i class="fas fa-check"></i>`;
+            copyBtn6.style.background="#2dcda7";
+            copyBtn6.style.color="#fff";
+            setTimeout(()=>{
+                copyBtn6.innerHTML = `<i class="fas fa-copy"></i>`;
+                copyBtn6.style.background="";
+                copyBtn6.style.color="";
+                document.getSelection().removeAllRanges();
+            },1000);
+        });
+        const copyBtn7 = document.querySelector(".copybtn7");
+        const display7  = document.querySelector("#display7");
+        copyBtn7.addEventListener("click",()=>{
+            display7.select();
+            document.execCommand("copy");
+            copyBtn7.innerHTML = `<i class="fas fa-check"></i>`;
+            copyBtn7.style.background="#2dcda7";
+            copyBtn7.style.color="#fff";
+            setTimeout(()=>{
+                copyBtn7.innerHTML = `<i class="fas fa-copy"></i>`;
+                copyBtn7.style.background="";
+                copyBtn7.style.color="";
+                document.getSelection().removeAllRanges();
+            },1000);
+        });
+        const copyBtn8 = document.querySelector(".copybtn8");
+        const display8  = document.querySelector("#display8");
+        copyBtn8.addEventListener("click",()=>{
+            display8.select();
+            document.execCommand("copy");
+            copyBtn8.innerHTML = `<i class="fas fa-check"></i>`;
+            copyBtn8.style.background="#2dcda7";
+            copyBtn8.style.color="#fff";
+            setTimeout(()=>{
+                copyBtn8.innerHTML = `<i class="fas fa-copy"></i>`;
+                copyBtn8.style.background="";
+                copyBtn8.style.color="";
+                document.getSelection().removeAllRanges();
+            },1000);
+        });
+        const copyBtn9 = document.querySelector(".copybtn9");
+        const display9  = document.querySelector("#display9");
+        copyBtn9.addEventListener("click",()=>{
+            display9.select();
+            document.execCommand("copy");
+            copyBtn9.innerHTML = `<i class="fas fa-check"></i>`;
+            copyBtn9.style.background="#2dcda7";
+            copyBtn9.style.color="#fff";
+            setTimeout(()=>{
+                copyBtn9.innerHTML = `<i class="fas fa-copy"></i>`;
+                copyBtn9.style.background="";
+                copyBtn9.style.color="";
+                document.getSelection().removeAllRanges();
+            },1000);
+        });
+        const copyBtn10 = document.querySelector(".copybtn10");
+        const display10  = document.querySelector("#display10");
+        copyBtn10.addEventListener("click",()=>{
+            display10.select();
+            document.execCommand("copy");
+            copyBtn10.innerHTML = `<i class="fas fa-check"></i>`;
+            copyBtn10.style.background="#2dcda7";
+            copyBtn10.style.color="#fff";
+            setTimeout(()=>{
+                copyBtn10.innerHTML = `<i class="fas fa-copy"></i>`;
+                copyBtn10.style.background="";
+                copyBtn10.style.color="";
+                document.getSelection().removeAllRanges();
+            },1000);
+        });
+        const copyBtn11 = document.querySelector(".copybtn11");
+        const display11  = document.querySelector("#display11");
+        copyBtn11.addEventListener("click",()=>{
+            display11.select();
+            document.execCommand("copy");
+            copyBtn11.innerHTML = `<i class="fas fa-check"></i>`;
+            copyBtn11.style.background="#2dcda7";
+            copyBtn11.style.color="#fff";
+            setTimeout(()=>{
+                copyBtn11.innerHTML = `<i class="fas fa-copy"></i>`;
+                copyBtn11.style.background="";
+                copyBtn11.style.color="";
+                document.getSelection().removeAllRanges();
+            },1000);
+        });
+        const copyBtn12 = document.querySelector(".copybtn12");
+        const display12  = document.querySelector("#display12");
+        copyBtn12.addEventListener("click",()=>{
+            display12.select();
+            document.execCommand("copy");
+            copyBtn12.innerHTML = `<i class="fas fa-check"></i>`;
+            copyBtn12.style.background="#2dcda7";
+            copyBtn12.style.color="#fff";
+            setTimeout(()=>{
+                copyBtn12.innerHTML = `<i class="fas fa-copy"></i>`;
+                copyBtn12.style.background="";
+                copyBtn12.style.color="";
+                document.getSelection().removeAllRanges();
+            },1000);
+        });
+        const copyBtn13 = document.querySelector(".copybtn13");
+        const display13  = document.querySelector("#display13");
+        copyBtn13.addEventListener("click",()=>{
+            display13.select();
+            document.execCommand("copy");
+            copyBtn13.innerHTML = `<i class="fas fa-check"></i>`;
+            copyBtn13.style.background="#2dcda7";
+            copyBtn13.style.color="#fff";
+            setTimeout(()=>{
+                copyBtn13.innerHTML = `<i class="fas fa-copy"></i>`;
+                copyBtn13.style.background="";
+                copyBtn13.style.color="";
+                document.getSelection().removeAllRanges();
+            },1000);
+        });
+document.querySelector(".toggle").addEventListener('click', function () {
+      document.querySelector(".text").classList.toggle('txt');
+    });
+    function changeMode(themeobj) {
+      if (themeobj.dataset.mode == "light") {
+        document.documentElement.setAttribute("data-theme", "dark");
+        themeobj.dataset.mode = "dark";
+
+      } else {
+        document.documentElement.setAttribute("data-theme", "light");
+        themeobj.dataset.mode = "light";
+      }
+    }
+    </script>
+</body>
+</html>

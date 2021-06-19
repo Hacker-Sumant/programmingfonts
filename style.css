@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rancho&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins";
+}
+body {
+  min-height: 100vh;
+  background: #79abf2;
+  overflow-x: hidden;
+}
+.text-box {
+  background: #fff;
+  width: 99%;
+  margin: 0.625rem;
+  padding: 0 1.25rem 1.25rem 1.25rem;
+  border-radius: 0.525rem;
+  border: 0.125rem solid rgb(97, 97, 97);
+}
+.text-box .toparea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.25rem 0;
+}
+.text-box .toparea h2 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+.text-box .toparea .copybtn:hover {
+  color: #777;
+  cursor: pointer;
+  background-color: #ddd;
+}
+.text-box .toparea .copybtn {
+  background-color: #eee;
+  color: #999;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+.text-box textarea {
+  width: 100%;
+  min-height: 28.125rem;
+  font-size: 1.2rem;
+  outline: none;
+  resize: none;
+  user-select: none;
+  border: 0.125rem solid #009fef;
+  border-radius: 0.125rem;
+}
+.bxfnt {
+  position: absolute;
+  background: #fff;
+  padding: 0 1.25rem 1.25rem 1.25rem;
+  border-radius: 0.525rem;
+  border: 0.125rem solid rgb(97, 97, 97);
+  width: 98.2%;
+  margin: 0.625rem;
+  height: 36rem;
+  text-align: center;
+}
+.main {
+  height: 31rem;
+  overflow-y: scroll;
+  margin-left: 1rem;
+  padding: 0 0.525rem;
+}
+.fnt {
+  margin-top: 2rem;
+}
+.fnt textarea {
+  text-align: center;
+  width: 100%;
+  padding: 0.525rem 0;
+  outline: none;
+  resize: none;
+  user-select: none;
+  border: 0.125rem solid #009fef;
+  border-radius: 0.125rem;
+  background: none;
+}
+
+.fnt .copybtn1:hover,
+.fnt .copybtn2:hover,
+.fnt .copybtn3:hover,
+.fnt .copybtn4:hover,
+.fnt .copybtn5:hover,
+.fnt .copybtn6:hover,
+.fnt .copybtn7:hover,
+.fnt .copybtn8:hover,
+.fnt .copybtn9:hover,
+.fnt .copybtn10:hover,
+.fnt .copybtn11:hover,
+.fnt .copybtn12:hover,
+.fnt .copybtn13:hover {
+  cursor: pointer;
+  color: #777;
+  background-color: #ddd;
+}
+.fnt #display1 {
+  font-family: "Bahnschrift", sans-serif;
+  font-size: 1.2rem;
+}
+.fnt #display2 {
+  font-family: "Lato", sans-serif;
+  font-size: 1.2rem;
+}
+.fnt #display3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+}
+.fnt #display4 {
+  font-family: "Mulish", sans-serif;
+  font-size: 1.2rem;
+}
+.fnt #display5 {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.2rem;
+}
+.fnt #display6 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+}
+.fnt #display7 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+}
+.fnt #display8 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.2rem;
+}
+.fnt #display9 {
+  font-family: "Rancho", sans-serif;
+  font-size: 1.2rem;
+}
+.fnt #display10 {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.2rem;
+}
+.fnt #display11 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.2rem;
+}
+.fnt #display12 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.2rem;
+}
+.fnt #display13 {
+  font-family: "Sriracha", cursive;
+  font-size: 0.8rem;
+}
+
+.fnt .copybtn1,
+.fnt .copybtn2,
+.fnt .copybtn3,
+.fnt .copybtn4,
+.fnt .copybtn5,
+.fnt .copybtn6,
+.fnt .copybtn7,
+.fnt .copybtn8,
+.fnt .copybtn9,
+.fnt .copybtn10,
+.fnt .copybtn11,
+.fnt .copybtn12,
+.fnt .copybtn13 {
+  background-color: #eee;
+  color: #999;
+  width: 2.2rem;
+  height: 2.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  border-radius: 50%;
+  transition: 0.4s;
+  margin-top: -3.5rem;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+@media (max-width: 998px) {
+  html {
+    font-size: 55%;
+  }
+  .text-box {
+    width: 100%;
+    font-size: 20px;
+  }
+}
+@media (max-width: 544px) {
+  html {
+    font-size: 45%;
+  }
+}
